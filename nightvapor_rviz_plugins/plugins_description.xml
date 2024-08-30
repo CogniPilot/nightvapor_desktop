@@ -1,0 +1,10 @@
+<library path="nightvapor_rviz_plugins">
+
+  <class name="nightvapor_rviz_plugins/nightvaporPanel"
+         type="nightvapor_rviz_plugins::nightvaporPanel"
+         base_class_type="rviz_common::Panel">
+    <description>The nightvapor rviz panel.</description>
+  </class>
+
+</library>
+
