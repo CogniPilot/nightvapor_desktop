@@ -17,11 +17,11 @@ class QLabel;
 
 namespace nightvapor_rviz_plugins
 {
-class nightvaporPanel : public rviz_common::Panel
+class NightVaporPanel : public rviz_common::Panel
 {
     Q_OBJECT
 public:
-    explicit nightvaporPanel(QWidget * parent = nullptr);
+    explicit NightVaporPanel(QWidget * parent = nullptr);
     virtual void onInitialize();
 protected Q_SLOTS:
     void update();

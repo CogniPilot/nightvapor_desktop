@@ -1,7 +1,7 @@
 <library path="nightvapor_rviz_plugins">
 
-  <class name="nightvapor_rviz_plugins/nightvaporPanel"
-         type="nightvapor_rviz_plugins::nightvaporPanel"
+  <class name="nightvapor_rviz_plugins/NightVaporPanel"
+         type="nightvapor_rviz_plugins::NightVaporPanel"
          base_class_type="rviz_common::Panel">
     <description>The nightvapor rviz panel.</description>
   </class>

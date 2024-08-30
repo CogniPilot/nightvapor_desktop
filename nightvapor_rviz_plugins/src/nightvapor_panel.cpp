@@ -10,11 +10,11 @@
 #include <pluginlib/class_list_macros.hpp>
 #include <synapse_msgs/msg/detail/status__struct.hpp>
 PLUGINLIB_EXPORT_CLASS(
-    nightvapor_rviz_plugins::nightvaporPanel,
+    nightvapor_rviz_plugins::NightVaporPanel,
     rviz_common::Panel)
 
 namespace nightvapor_rviz_plugins {
-nightvaporPanel::nightvaporPanel(QWidget* parent)
+NightVaporPanel::NightVaporPanel(QWidget* parent)
     : rviz_common::Panel(parent)
 {
     QVBoxLayout* layout = new QVBoxLayout();
@@ -54,7 +54,7 @@ nightvaporPanel::nightvaporPanel(QWidget* parent)
     setLayout(layout);
 }
 
-void nightvaporPanel::onInitialize()
+void NightVaporPanel::onInitialize()
 {
     node_ = getDisplayContext()->getRosNodeAbstraction().lock()->get_raw_node();
     sub_status_ = node_->create_subscription<synapse_msgs::msg::Status>(
